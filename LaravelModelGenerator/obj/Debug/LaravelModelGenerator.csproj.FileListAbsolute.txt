@@ -19,7 +19,6 @@ C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\Larave
 C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\obj\Debug\LaravelModelGenerator.csproj.AssemblyReference.cache
 C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\obj\Debug\LaravelModelGenerator.csproj.CoreCompileInputs.cache
-C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\obj\Debug\LaravelModelGenerator.csproj.CopyComplete
 C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\obj\Debug\LaravelModelGenerator.exe
 C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\obj\Debug\LaravelModelGenerator.pdb
 C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\bin\Debug\templates\collection_template.txt
@@ -27,3 +26,5 @@ C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\Larave
 C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\bin\Debug\templates\model_template.txt
 C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\bin\Debug\templates\resource_template.txt
 C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\bin\Debug\settings.ini
+C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\obj\Debug\LaravelM.20896D49.Up2Date
+C:\Users\PECA\Documents\Visual Studio 2022\Projects\LaravelModelGenerator\LaravelModelGenerator\obj\Debug\LaravelModelGenerator.exe.config

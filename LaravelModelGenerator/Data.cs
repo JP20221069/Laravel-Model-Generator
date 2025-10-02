@@ -50,5 +50,36 @@ namespace LaravelModelGenerator
             }
             return ret;
         }
+
+        public List<ConstraintInfo> getConstraintInfo()
+        {
+            List<ConstraintInfo> ret = new List<ConstraintInfo>();
+            MySqlConnection connection = new MySqlConnection(connectionstring);
+
+            try
+            {
+                connection.Open();
+                string query = @"SELECT i.TABLE_SCHEMA, i.TABLE_NAME, k.COLUMN_NAME, k.REFERENCED_TABLE_NAME, k.REFERENCED_COLUMN_NAME,i.CONSTRAINT_TYPE, i.CONSTRAINT_NAME
+                                 FROM information_schema.TABLE_CONSTRAINTS i
+                                 LEFT JOIN information_schema.KEY_COLUMN_USAGE k ON i.CONSTRAINT_NAME = k.CONSTRAINT_NAME
+                                 WHERE i.CONSTRAINT_TYPE = 'FOREIGN KEY' AND i.CONSTRAINT_SCHEMA = '"+dbname+"';";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                MySqlDataReader dr = command.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    ret.Add(new ConstraintInfo(dr["TABLE_NAME"].ToString(), dr["COLUMN_NAME"].ToString(), dr["REFERENCED_TABLE_NAME"].ToString(), dr["REFERENCED_COLUMN_NAME"].ToString(),ConstraintType.FOREIGN_KEY));
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return ret;
+        }
     }
 }

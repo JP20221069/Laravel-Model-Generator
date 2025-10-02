@@ -174,7 +174,7 @@ namespace LaravelModelGenerator
                     Console.WriteLine("Input model data:");
                     Console.Write("Name >");
                     string model_name = Console.ReadLine();
-                    Console.WriteLine("Table >");
+                    Console.Write ("Table >");
                     string table_name = Console.ReadLine();
                     string uns = "";
                     int count = 1, current = 0;
@@ -241,6 +241,10 @@ namespace LaravelModelGenerator
                 else if (commx[0].ToUpper()=="EXIT")
                 {
                     break;
+                }
+                else if (commx[0].ToUpper()=="HELP" || commx[0].ToUpper()=="LIST")
+                {
+
                 }
                 else
                 {
